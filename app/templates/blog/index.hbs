@@ -1,0 +1,10 @@
+{{#each model as |post|}}
+  {{blog-card
+    author=post.author
+    excerpt=(save-html post.excerpt)
+    date=post.date
+    slug=post.slug
+    title=post.title
+  }}
+{{/each}}
+{{outlet}}
