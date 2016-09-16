@@ -1,0 +1,13 @@
+<div class="panel-body">
+  <h2>{{title}}</h2>
+
+  <p>
+    <strong>Autor: <a href="" rel="author">{{author.name}}</a></strong>
+    •
+    <time>{{date}}</time>
+  </p>
+
+  <p class="lead">{{excerpt}}</p>
+
+  {{#link-to 'blog.show' slug class='btn btn-primary'}}Czytaj dalej{{/link-to}}
+</div>
